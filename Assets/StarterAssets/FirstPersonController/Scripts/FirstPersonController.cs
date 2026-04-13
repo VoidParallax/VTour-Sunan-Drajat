@@ -154,6 +154,7 @@ namespace StarterAssets
 					{
 						// Pass the target we hit to the interact function
 						click.TriggerInteraction(target);
+						isClicked = true;
 					
 					}
 				}

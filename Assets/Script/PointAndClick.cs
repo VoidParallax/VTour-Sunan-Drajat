@@ -10,7 +10,7 @@ public class PointAndClick : MonoBehaviour
     public float lookSpeed = 2f;
 
     public GameObject PanelPrefab;
-    private bool isClicked = false;
+    // private bool isClicked = false;
 
     [Header("Raycast Settings")]
     public Transform playerCamera;
@@ -59,12 +59,12 @@ public class PointAndClick : MonoBehaviour
 
     void CheckObjectInFront()
     {
-        if (Input.GetMouseButtonDown(0) && isClicked)
-        {
-            PanelPrefab.SetActive(false);
-            isClicked = false;
-        }
-        else if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, interactDistance, interactLayer))
+        // if (Input.GetMouseButtonDown(0) && isClicked)
+        // {
+        //     PanelPrefab.SetActive(false);
+        //     isClicked = false;
+        // }
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out RaycastHit hit, interactDistance, interactLayer))
         {
             if (hit.collider.TryGetComponent<PointAndClickTarget>(out var target))
             {
@@ -89,7 +89,6 @@ public class PointAndClick : MonoBehaviour
             descriptionText.text = target.textDescription;
         }
         PanelPrefab.SetActive(true);
-        isClicked = true;
     }
 
     void OnGUI()
