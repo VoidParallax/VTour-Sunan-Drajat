@@ -24,12 +24,13 @@ public class PointAndClick : MonoBehaviour
         // Lock and hide the cursor for first-person control
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        playerCamera = Camera.main.transform;
     }
 
-    void Update()
-    {
-        CheckObjectInFront();
-    }
+    // void Update()
+    // {
+    //     CheckObjectInFront();
+    // }
 
     void HandleMovement()
     {
@@ -70,14 +71,14 @@ public class PointAndClick : MonoBehaviour
                 if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E))
                 {
                     // Pass the target we hit to the interact function
-                    OnInteract(target);
+                    TriggerInteraction(target);
                 
                 }
             }
         }
     }
 
-    void OnInteract(PointAndClickTarget target)
+    public void TriggerInteraction(PointAndClickTarget target)
     {
         PanelPrefab.transform.position = target.transform.position + Vector3.up * 1.5f;
         PanelPrefab.transform.LookAt(playerCamera);

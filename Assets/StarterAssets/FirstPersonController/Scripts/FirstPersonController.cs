@@ -8,6 +8,7 @@ namespace StarterAssets
 	[RequireComponent(typeof(CharacterController))]
 #if ENABLE_INPUT_SYSTEM
 	[RequireComponent(typeof(PlayerInput))]
+	[RequireComponent(typeof(PointAndClick))]
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
@@ -50,6 +51,7 @@ namespace StarterAssets
 		public float TopClamp = 90.0f;
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
+		private bool isClicked = false;
 
 		// cinemachine
 		private float _cinemachineTargetPitch;
@@ -63,6 +65,7 @@ namespace StarterAssets
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
+		private PointAndClick click;
 
 	
 #if ENABLE_INPUT_SYSTEM
@@ -108,6 +111,7 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+			click = GetComponent<PointAndClick>();
 		}
 
 		private void Update()
@@ -115,6 +119,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			CheckObjectInFront();
 		}
 
 		private void LateUpdate()
@@ -127,6 +132,33 @@ namespace StarterAssets
 			// set sphere position, with offset
 			Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
+		}
+		public void CheckObjectInFront()
+		{
+			if (_input.interact)
+					{
+						// Pass the target we hit to the interact function
+						Debug.Log("We are clicking yaay!");
+					
+					}
+			if (_input.interact && isClicked)
+			{
+				click.PanelPrefab.SetActive(false);
+				isClicked = false;
+			}
+			else if (Physics.Raycast(click.playerCamera.position, click.playerCamera.forward, out RaycastHit hit, click.interactDistance, click.interactLayer))
+			{
+				if (hit.collider.TryGetComponent<PointAndClickTarget>(out var target))
+				{
+					if (_input.interact)
+					{
+						// Pass the target we hit to the interact function
+						click.TriggerInteraction(target);
+					
+					}
+				}
+			}
+			_input.interact = false;
 		}
 
 		private void CameraRotation()
