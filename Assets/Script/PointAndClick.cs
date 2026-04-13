@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-
 public class PointAndClick : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -27,6 +26,10 @@ public class PointAndClick : MonoBehaviour
         Cursor.visible = false;
     }
 
+    void Update()
+    {
+        CheckObjectInFront();
+    }
 
     void HandleMovement()
     {
@@ -53,7 +56,7 @@ public class PointAndClick : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
     }
 
-    public void CheckObjectInFront()
+    void CheckObjectInFront()
     {
         if (Input.GetMouseButtonDown(0) && isClicked)
         {
@@ -74,7 +77,7 @@ public class PointAndClick : MonoBehaviour
         }
     }
 
-    public void OnInteract(PointAndClickTarget target)
+    void OnInteract(PointAndClickTarget target)
     {
         PanelPrefab.transform.position = target.transform.position + Vector3.up * 1.5f;
         PanelPrefab.transform.LookAt(playerCamera);

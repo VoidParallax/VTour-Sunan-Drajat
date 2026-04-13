@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 2013f1c675acf2146b8991dd9031cad3
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Batu
+    second: {fileID: 2100000, guid: bd69d770240a05241a58209c85388916, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Batu
+    second: {fileID: 2100000, guid: 81f4153ddb7490d469672fb093f8c020, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Batu 1
+    second: {fileID: 2100000, guid: dd38ec79c9e31c14daa92b8ca7a99c5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Batu 2
+    second: {fileID: 2100000, guid: 26712212b353efd4c94c9b0c25fd127d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Batu fosil kerang
+    second: {fileID: 2100000, guid: b0eff992f6e6a28419dd2cc5698527c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Fragmen gerabah
+    second: {fileID: 2100000, guid: d2e14c8636109594b9463e65d38f5094, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Fragmen keramik 1
+    second: {fileID: 2100000, guid: 9361992c6c893924196533f3b395748c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Fragmen keramik 2
+    second: {fileID: 2100000, guid: 0615f464e5f5df6489086867ec03cf6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Lumpang
+    second: {fileID: 2100000, guid: 81b21f56ff05b7742b7bd779685fe0ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Vas 1
+    second: {fileID: 2100000, guid: 332b09809e1041b4494e7edd9aae07d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Vas 2
+    second: {fileID: 2100000, guid: 4765b69eb03dcb84d95fea6da91daf3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Vas 3
+    second: {fileID: 2100000, guid: 684edbbfe43e5c7429bb000820ed79a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Vas 4
+    second: {fileID: 2100000, guid: f27c05117fa472f409e951ee54174c01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Vas 5
+    second: {fileID: 2100000, guid: 1321854bca15cf245be53446ef6109f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E6 Vas 6
+    second: {fileID: 2100000, guid: 5ff81a42e2e742248853fb2d64e797ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 1 fondasi
+    second: {fileID: 2100000, guid: a983cd022fbce7d4b9e2a5ee804f7fe6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 1 tingkat 1
+    second: {fileID: 2100000, guid: 1dd2837e40c8c824ea187d9fbb888a5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 1 tingkat 3
+    second: {fileID: 2100000, guid: 5571dd4fe29f0c548a41b559910ffc6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 2 fondasi
+    second: {fileID: 2100000, guid: 3b3c69bc917b3da40a5adae23b747f8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 2 tingkat 1
+    second: {fileID: 2100000, guid: 24c2d1b9d711a0f4cbf394f1b4805df3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 2 tingkat 2
+    second: {fileID: 2100000, guid: dd163b94d6e8add4089699ee455fe1ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 2 tingkat 3
+    second: {fileID: 2100000, guid: 8754889f9958fe647af95da6d3782925, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 3 bag kanan
+    second: {fileID: 2100000, guid: 626df8453bc010545a5da7ee15f7529f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 3 bag kiri
+    second: {fileID: 2100000, guid: da34c6f763211a546be5c21f7047f5de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 3 fondasi
+    second: {fileID: 2100000, guid: 19a31932aaba0014e81e2d2a2ecb4f49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 4 batik
+    second: {fileID: 2100000, guid: 5a1a06bc50e37a543be5dc36e92394b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 4 fondasi
+    second: {fileID: 2100000, guid: f84dad3c6279e4c4eaba5aef272e5cb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 4 lonceng
+    second: {fileID: 2100000, guid: 63bbf6c43974d3341bcfeffa5d010a06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 4 tombak
+    second: {fileID: 2100000, guid: 7548e05a7d7557b488f35d1c37a3d63c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 5 bag belakang
+    second: {fileID: 2100000, guid: 2a9d0c78cfecb11488282c7c979370fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 5 bag depan
+    second: {fileID: 2100000, guid: 2a8966c94ee6b62438c2d74772fc8796, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 5 bag tengah
+    second: {fileID: 2100000, guid: eeb9504eea209cd478169dad037f64a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 5 fondasi
+    second: {fileID: 2100000, guid: 4b589018d40cc504fa4efd306a4faaaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 6 bag batu
+    second: {fileID: 2100000, guid: c0a9f1475728b454ea5042f35a084766, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 6 fondasi
+    second: {fileID: 2100000, guid: e86a5d55d55191f478077fcaccbc64eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase 7
+    second: {fileID: 2100000, guid: d41152a5ee399f446a5ac93da39ba33d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etalase tingkat 2
+    second: {fileID: 2100000, guid: e8e4d39eadbdc9248b6ba5c897e5dbc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Museum bagtas
+    second: {fileID: 2100000, guid: ee1783bff5d0cd24c85ede5e84561a61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Museum bagwah
+    second: {fileID: 2100000, guid: 415f5cae241ae8448bc6c7ca66b1ac69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tali
+    second: {fileID: 2100000, guid: 585e436a504ab5f42aed49695b964a3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vas 1
+    second: {fileID: 2100000, guid: 84165c2fbbe6f16478231bf7bb50d17d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: batik
+    second: {fileID: 2100000, guid: 65735ea461977584aa1b191ba582c5e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buli buli 2
+    second: {fileID: 2100000, guid: 73c734d3da90a6748adf5eed6463243b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buli buli 3
+    second: {fileID: 2100000, guid: f1a3b7064d78a6447b7693cad8e34ac7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buli buli 4
+    second: {fileID: 2100000, guid: 3b72cecab3012d446a6fe067fe7698da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buli buli 5
+    second: {fileID: 2100000, guid: a43f646f6f2699548b72cf4c99512f67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buli buli 6
+    second: {fileID: 2100000, guid: 43377c2e4857ec54db497f4f012734d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buli buli 7
+    second: {fileID: 2100000, guid: 9f084f085cb85ef40aae0ed44251a546, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material batu et5
+    second: {fileID: 2100000, guid: 29c04cf661ef09a4f9dcbc3e091938d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: penambal museum bagtas
+    second: {fileID: 2100000, guid: 3c9c7ea71ecaa8e4b8fa7ab3eab7b247, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: quran low poly
+    second: {fileID: 2100000, guid: d3ea23c7241975e4b9ebb7698fcd641d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sendok 1
+    second: {fileID: 2100000, guid: 511ad59b6777ff942bbf82818515aa4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: uji coba ai
+    second: {fileID: 2100000, guid: 8861fb8e68a3a594385c420a3332ce45, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Etalase 2 fondasi_Base_color
+    second: {fileID: 2800000, guid: 7fbe1033a0ae3c043b298f0c03623266, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Etalase 2 fondasi_Normal
+    second: {fileID: 2800000, guid: 5d0564149fcc68a4daeaf5018df8aafa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Etalase 7_BaseColor
+    second: {fileID: 2800000, guid: 64199f648b736254dafc44c889c6184d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Etalase 7_Normal
+    second: {fileID: 2800000, guid: 01496fbbd223dc343a88f97b97f2b31e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IMG20250729155618
+    second: {fileID: 2800000, guid: 8e1147e0fa9e2af4b947ee0408b9d1ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Museum bagtas_Base_color
+    second: {fileID: 2800000, guid: 3dd6d571ad30e3c459ea19a3320080c5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Museum bagwah_Base_color
+    second: {fileID: 2800000, guid: 754010e40be1df042be3d308b6dbec2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Museum bagwah_Normal
+    second: {fileID: 2800000, guid: 8bf978383ca779349a40c95aa5c3344c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Museum bagwah_Roughness
+    second: {fileID: 2800000, guid: 50734c07e315161418ba1d0c2d66f5e3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Screenshot 2026-04-06 235225
+    second: {fileID: 2800000, guid: 75a842d5f148bac4c8cf3fb628b60cb8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vas 1
+    second: {fileID: 2800000, guid: a39ac9e2a3c2d8a49b4cabe8a19bef21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 1
+    second: {fileID: 2800000, guid: d7bd5a80c08bec44f83808369ddc3aa4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 2
+    second: {fileID: 2800000, guid: c978eb5d2cbf01049a4309ce374ec038, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 3
+    second: {fileID: 2800000, guid: 33d11b96d3ec2e74c8ae5eeff23ba45b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 4
+    second: {fileID: 2800000, guid: 294be719ca8665049b0d75807e3a12f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 5
+    second: {fileID: 2800000, guid: d474dfc2fec91714893555a53c512650, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 6
+    second: {fileID: 2800000, guid: 897499a66c1aea44289952a2c10b3801, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: buli buli 7
+    second: {fileID: 2800000, guid: a35bde1409460be43b72886400233e7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: quran low poly_BaseColor
+    second: {fileID: 2800000, guid: 0e5418a8f2ea35c42af4ce51a125bc64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: quran low poly_Normal
+    second: {fileID: 2800000, guid: d1eb701cedfda134a9a08b98bad3fd84, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

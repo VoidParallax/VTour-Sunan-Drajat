@@ -8,9 +8,8 @@ namespace StarterAssets
 	[RequireComponent(typeof(CharacterController))]
 #if ENABLE_INPUT_SYSTEM
 	[RequireComponent(typeof(PlayerInput))]
-    [RequireComponent(typeof(PointAndClick))]
 #endif
-    public class FirstPersonController : MonoBehaviour
+	public class FirstPersonController : MonoBehaviour
 	{
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
@@ -54,7 +53,6 @@ namespace StarterAssets
 
 		// cinemachine
 		private float _cinemachineTargetPitch;
-		private bool isClicked = false;
 
 		// player
 		private float _speed;
@@ -65,8 +63,6 @@ namespace StarterAssets
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
-
-		private PointAndClick click;
 
 	
 #if ENABLE_INPUT_SYSTEM
@@ -112,7 +108,6 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
-			click = GetComponent<PointAndClick>();
 		}
 
 		private void Update()
@@ -120,36 +115,12 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-			
 		}
 
 		private void LateUpdate()
 		{
 			CameraRotation();
 		}
-
-		public void CheckObjectInFront()
-    {
-        if (_input.interact && isClicked)
-        {
-            click.PanelPrefab.SetActive(false);
-            isClicked = false;
-        }
-        else if (Physics.Raycast(click.playerCamera.position, click.playerCamera.forward, out RaycastHit hit, click.interactDistance, click.interactLayer))
-        {
-            if (hit.collider.TryGetComponent<PointAndClickTarget>(out var target))
-            {
-                if (_input.interact)
-                {
-                    // Pass the target we hit to the interact function
-                    click.OnInteract(target);
-                
-                }
-            }
-        }
-    }
-
-		
 
 		private void GroundedCheck()
 		{
