@@ -83,11 +83,13 @@ public class PointAndClick : MonoBehaviour
         PanelPrefab.transform.position = target.transform.position + Vector3.up * 1.5f;
         PanelPrefab.transform.LookAt(playerCamera);
         PanelPrefab.transform.Rotate(0, 180, 0); // Flip so text faces player correctly
-        TMP_Text descriptionText = PanelPrefab.GetComponentInChildren<TMP_Text>();
-        if (descriptionText != null)
-        {
-            descriptionText.text = target.textDescription;
-        }
+        // TMP_Text descriptionText = PanelPrefab.GetComponentInChildren<TMP_Text>();
+        // if (descriptionText != null)
+        // {
+        //     descriptionText.text = target.textDescription;
+        // }
+        PanelPrefab.GetComponent<PanelScript>().SetImage(target.imageList);
+        PanelPrefab.GetComponent<PanelScript>().SetText(target.textDescription);
         PanelPrefab.SetActive(true);
     }
 
