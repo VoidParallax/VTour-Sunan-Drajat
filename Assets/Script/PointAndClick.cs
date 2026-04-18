@@ -88,8 +88,7 @@ public class PointAndClick : MonoBehaviour
         // {
         //     descriptionText.text = target.textDescription;
         // }
-        PanelPrefab.GetComponent<PanelScript>().SetImage(target.imageList);
-        PanelPrefab.GetComponent<PanelScript>().SetText(target.textDescription);
+        PanelPrefab.GetComponent<PanelScript>().SetModal(target.Data);
         PanelPrefab.SetActive(true);
     }
 

@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+[System.Serializable]
+public class ModalData
+{
+    public string description;
+    public Sprite sprite;
+}
 public class PointAndClickTarget : MonoBehaviour
 {
-    [TextArea]
-    [Tooltip("The description to show when the player looks at this object.")]
-    public string textDescription;
-
-    public List<Sprite> imageList;
+    public List<ModalData> Data;
 }

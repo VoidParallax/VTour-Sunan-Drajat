@@ -3,32 +3,32 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class PanelScript : MonoBehaviour
 {
-    public GameObject ImageSide;
+    public GameObject ContentReference;
+    public GameObject ModalPrefab;
 
-    public void SetImage(List<Sprite> imageList)
+    public void SetModal(List<ModalData> data)
     {
-        //create a new image for each sprite in the list and set it as the ImageSide children
-        // Clear any existing images first
-        foreach (Transform child in ImageSide.transform)
+        // Clear existing modals to prevent duplication
+        foreach (Transform child in ContentReference.transform)
         {
             Destroy(child.gameObject);
         }
 
-        // Create a new image for each sprite in the list and set it as the ImageSide children
-        foreach (Sprite sprite in imageList)
+        foreach (ModalData dataItem in data)
         {
-            GameObject imgObject = new("Image_Item");
-            imgObject.transform.SetParent(ImageSide.transform, false);
-            Image img = imgObject.AddComponent<Image>();
-            img.sprite = sprite;
-            img.preserveAspect = true;
-        }
-    }
+            // Create a new instance of the modal prefab and parent it to the content holder
+            GameObject modalInstance = Instantiate(ModalPrefab, ContentReference.transform);
 
-    public void SetText(string text)
-    {
-        GetComponentInChildren<TMP_Text>().text = text;
+            // Find the Image and Text components within the new instance's children
+            Image imageComponent = modalInstance.GetComponentInChildren<Image>();
+            TMP_Text textComponent = modalInstance.GetComponentInChildren<TMP_Text>();
+
+            // Set the sprite and text from the ModalData
+            if (imageComponent != null) imageComponent.sprite = dataItem.sprite;
+            if (textComponent != null) textComponent.text = dataItem.description;
+        }
     }
 }
