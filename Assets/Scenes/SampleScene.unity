@@ -609,13 +609,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11944503, y: -0.8804175, z: 0.33268207, w: 0.31610212}
-  m_LocalPosition: {x: -2.74, y: 12.71, z: -0.68}
+  m_LocalRotation: {x: 0.27432007, y: -0.6778619, z: 0.3584925, w: 0.5802886}
+  m_LocalPosition: {x: 123.1, y: 59.2, z: -94.1}
   m_LocalScale: {x: 1.0342, y: 1, z: 1.1203}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 401.4, y: 219.5, z: 0}
+  m_LocalEulerAnglesHint: {x: 413.551, y: 263.28198, z: 4.262}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: aa1ecec0095848047993ccb583e943ca, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13211,9 +13211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37349f84ce5c68e41bc2ccd6dcd06964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointAndClickTarget
-  textDescription: Alat bunyi yang terbuat dari kayu dan kulit, dipakai sebagai tanda
-    waktu melaksanakan ibadah sholat bagi umat Islam. Dibuat oleh Pangeran Wonotirto
-    keturunan Sunan Drajat ke II, antara abad XVII
+  Data:
+  - description: Alat bunyi yang terbuat dari kayu dan kulit, dipakai sebagai tanda
+      waktu melaksanakan ibadah sholat bagi umat Islam. Dibuat oleh Pangeran Wonotirto
+      keturunan Sunan Drajat ke II, antara abad XVII
+    sprite: {fileID: 0}
 --- !u!23 &7495177880073614038
 MeshRenderer:
   m_ObjectHideFlags: 0
